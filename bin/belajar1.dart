@@ -1,7 +1,10 @@
 
 void main() {
   // helloWorld();
-  belajarVariabel();
+  // belajarVariabel();
+  // stringInterpolation();
+  // tipeDataDynemic();
+  konversiTipeData();
 }
 
 helloWorld () {
@@ -130,4 +133,75 @@ tipeDataNumber() {
   print(firstName);
   print(lastName);
 
+}
+
+void stringInterpolation() {
+  String nama = 'Budi';
+  int umur = 30;
+
+  // Menggunakan $ untuk variabel sederhana
+  String sapaan = 'Halo, nama saya $nama dan umur saya $umur tahun.';
+  print(sapaan);
+
+  // Menggunakan ${} untuk ekspresi
+  String detail = 'Saya lahir pada tahun ${2024 - umur}.';
+  print(detail);
+
+  // Menggunakan ${} untuk memanggil method pada variabel
+  String namaUppercase = 'Nama saya dalam huruf besar adalah ${nama.toUpperCase()}.';
+  print(namaUppercase);
+
+  // multiline string
+  String multiline = '''
+  Ini adalah multiline string.
+  Ini adalah baris kedua.
+  Ini adalah baris ketiga.
+  ''';
+
+  print(multiline);
+}
+
+void tipeDataDynemic () {
+  dynamic namaVariabelDinamis = 100;
+  print(namaVariabelDinamis);
+
+  namaVariabelDinamis = 'jufron';
+  print(namaVariabelDinamis);
+
+  namaVariabelDinamis = true;
+  print(namaVariabelDinamis);
+}
+
+void konversiTipeData () {
+  int umur = 26;
+  late String newUmur;
+  newUmur = umur.toString();
+  print(newUmur);
+
+  String inputString = '100';
+
+  int inputInt = int.parse(inputString);
+  double inputDouble = double.parse(inputString);
+
+  double doubleFromInt = inputInt.toDouble();
+  int intFromDouble = inputDouble.toInt();
+
+  String stringFromInt = inputInt.toString();
+  String stringFromDouble = inputDouble.toString();
+
+  String inputString1 = 'true';
+  bool inputBoolean = inputString1 == 'true';
+
+  String inputBooleanToString = inputBoolean.toString();
+
+  print(inputInt);
+  print(inputDouble);
+
+  print(doubleFromInt);
+  print(intFromDouble);
+
+  print(stringFromInt);
+  print(stringFromDouble);
+
+  print('input bool to string : $inputBooleanToString');
 }
