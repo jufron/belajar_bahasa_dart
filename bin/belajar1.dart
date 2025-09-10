@@ -1,10 +1,21 @@
+import 'belajarMap.dart';
 
 void main() {
   // helloWorld();
   // belajarVariabel();
   // stringInterpolation();
   // tipeDataDynemic();
-  konversiTipeData();
+  // konversiTipeData();
+  // operatorAritmatika();
+  // operatorPerbandingan();
+  // operatorPenugasan();
+  // operatorTypeTest();
+  // tipeDataList();
+  // tipeDataSet();
+  // tipeDataMap();
+  // tipeDataSimbol();
+  // pengkondisian();
+  tipeDataNul(); 
 }
 
 helloWorld () {
@@ -204,4 +215,186 @@ void konversiTipeData () {
   print(stringFromDouble);
 
   print('input bool to string : $inputBooleanToString');
+}
+
+void operatorAritmatika () {
+  int angka1 = 10;
+  int angka2 = 5;
+
+  int penjumlahan = angka1 + angka2;
+  int pengurangan = angka1 - angka2;
+  int perkalian = angka1 * angka2;
+  double pembagian = angka1 / angka2;
+  int sisaBagi = angka1 % angka2;
+  int pembagianTanpaDesimal = angka1 ~/ angka2;
+
+  print('penjumlahan : $penjumlahan');
+  print('pengurangan : $pengurangan');
+  print('perkalian : $perkalian');
+  print('pembagian : $pembagian');
+  print('sisa bagi : $sisaBagi');
+  print('pembagian tanpa desimal : $pembagianTanpaDesimal');
+}
+
+void operatorPerbandingan () {
+  // * mirip seperti bahasa pemrogaman pada umumnya baik javascrip maupun php
+
+  /*
+  * == sama dengan
+  * != tidak sama dengan
+  * > lebih besar
+  * < lebih kecil
+  * >= lebih besar sama dengan
+  * <= lebih kecil sama dengan
+  */
+
+  int angka1 = 10;
+  int angka2 = 10;
+  print('operator perbandingan sama dengan 10 == 10 = ${angka1 == angka2}');
+  print('operator perbandingan tidak sama dengan 10 != 10 = ${angka1 != angka2}');
+  print('operator perbandingan lebih besar 10 > 10 = ${angka1 > angka2}');
+  print('operator perbandingan lebih kecil 10 < 10 = ${angka1 < angka2}');
+  print('operator perbandingan lebih besar sama dengan 10 >= 10 = ${angka1 >= angka2}');
+  print('operator perbandingan lebih kecil sama dengan 10 <= 10 = ${angka1 <= angka2}');
+}
+
+void operatorPenugasan () {
+  /* 
+    * operator penugasan
+    * a = a + 10 cara lain seperti ini a += 10
+    * a = a - 10 cara lain seperti ini a -= 10
+    * a = a * 10 cara lain seperti ini a *= 10
+    * a = a / 10 cara lain seperti ini a /= 10
+    * a = a % 10 cara lain seperti ini a %= 10
+    * a = a ~/ 10 cara lain seperti ini a ~/= 10
+  */
+
+  /*
+  * increment dan decrement
+  * a++
+  * ++a
+  * a--
+  * --a
+  */
+
+  print('--- Contoh a++ (Post-increment) ---');
+  int a = 0;
+  int b = a++; 
+  print('Nilai a: $a'); // a akan menjadi 1
+  print('Nilai b: $b'); // b akan menjadi 0, karena nilai a diambil sebelum dinaikkan
+
+  print('\n--- Contoh ++a (Pre-increment) ---');
+  int c = 0;
+  int d = ++c;
+  print('Nilai c: $c'); // c akan menjadi 1
+  print('Nilai d: $d'); // d akan menjadi 1, karena nilai c dinaikkan sebelum diambil
+}
+
+void operatorLogika () {
+  /*
+  * operator gerbang logika mirip sekali dengan bahasa pemrograman lainya
+  */
+}
+
+void operatorTypeTest () {
+  dynamic isiValue = 100;
+
+  // konversi tipe data secara paksa jika tidak sesuai error
+  int valueInt = isiValue as int;
+
+  bool isInt = isiValue is int;
+  bool isNotBoolean = isiValue is! bool;
+
+  print(valueInt);
+  print(isInt);
+  print(isNotBoolean);
+}
+
+void tipeDataList () {
+  List <int> daftarAngka = [];
+
+  var daftarNama = <String>[];
+
+  print(daftarAngka);
+  print(daftarNama);
+
+  daftarNama.add('james');
+  daftarNama.add('dodi');
+  daftarNama.add('andi');
+  daftarNama.add('sinta');
+  daftarNama.add('ardi');
+
+  print(daftarNama);
+  print(daftarNama[3]);
+
+  daftarNama[0] = 'jules';
+  print(daftarNama);
+
+  daftarNama.removeAt(0);
+  print(daftarNama);
+
+  List <String> daftarMahasiswa = ['james', 'erik', 'sinta', 'dodi'];
+  var daftarDosen = ['ayo', 'jen', 'novi'];
+
+  print('daftar mahasiswa : $daftarMahasiswa');
+  print("daftar dosen : $daftarDosen");
+}
+
+void tipeDataSet () {
+  // * set menerima cuman 1 data
+
+  Set <String> daftarSiswa = {};
+  var daftarGuru = <String>{};
+
+  daftarSiswa.add('andi');
+  daftarGuru.add('dodi');
+  daftarSiswa.add('erik');
+
+  print(daftarSiswa);
+  print(daftarSiswa.length);
+
+  Set <String> daftarBuah = {'anggur', 'semangka', 'jeruk'};
+  print(daftarBuah);
+}
+
+
+void tipeDataSimbol () {
+  Symbol symbol1 = Symbol('jufron tamo ama');
+  var symbol2 = #belajar;
+
+  print(symbol1);
+  print(symbol2);
+}
+
+void pengkondisian () {
+  // if else
+
+  // switch statement
+  String rambuLalulintas = 'hijau';
+
+  switch (rambuLalulintas) {
+    case 'merah':
+      print('berhenti');
+      break;
+    case 'kuning':
+      print('hati-hati');
+      break;
+    case 'hijau':
+      print('jalan');
+      break;
+    default:
+      print('anda memasukan salah');
+  }
+}
+
+tipeDataNul () {
+  String? nama = null;
+
+  print('nama : ${nama?.toLowerCase()}');
+
+  if (nama != null) {
+    print(nama.toLowerCase());
+  }
+
+  print(nama ?? 'nama tidak ada');
 }
