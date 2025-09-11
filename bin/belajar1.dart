@@ -1,6 +1,6 @@
 import 'belajarMap.dart';
 
-void main() {
+void main(List <String> args) {
   // helloWorld();
   // belajarVariabel();
   // stringInterpolation();
@@ -15,7 +15,18 @@ void main() {
   // tipeDataMap();
   // tipeDataSimbol();
   // pengkondisian();
-  tipeDataNul(); 
+  // tipeDataNul(); 
+  // perulanganFor();
+  // perulanganForIn();
+  // functionParameter();
+  // functionOPtionalParameter();
+  // functionRecursiveParent();
+  // functionNameParameter();
+  // functionShortExpression();
+
+  // innerFunction();
+  // print(args);
+  higherOrderFunction();
 }
 
 helloWorld () {
@@ -387,7 +398,7 @@ void pengkondisian () {
   }
 }
 
-tipeDataNul () {
+void tipeDataNul () {
   String? nama = null;
 
   print('nama : ${nama?.toLowerCase()}');
@@ -397,4 +408,122 @@ tipeDataNul () {
   }
 
   print(nama ?? 'nama tidak ada');
+}
+
+
+void perulanganFor () {
+  for(int i = 0; i < 10; i++) {
+    print(i);
+  }
+}
+
+void perulanganForIn () {
+  List <String> daftarNamaMahasiswa = ['andi', 'ardi', 'aldi'];
+  var daftarNamaDosen = <String> ['aldi', 'aldo', 'erik'];
+
+  for (String mahasiswa in daftarNamaMahasiswa) {
+    print("nama mahasiswa $mahasiswa");
+  }
+
+  print('cetak daftar dosen');
+  for(String dosen in daftarNamaDosen) {
+    print('nama dosen $dosen');
+  }
+  print('====================================');
+  print('daftar mahasiswa');
+
+  daftarNamaMahasiswa.forEach((String mahasiswa) {
+    print('loop dengan foreach $mahasiswa');
+  });
+
+  print('====================================');
+  print('daftar dosen');
+
+  daftarNamaDosen.forEach((String dosen) {
+    print('loop dengan foreach $dosen');
+  });
+}
+
+void functionParameter () {
+  List <String> daftarBuah = ['apel', 'mangga', 'jeruk'];
+  var daftarFilem = <String> ['avengers', 'spiderman', 'batman'];
+
+  cetakDaftarNama(daftarBuah, 'daftar buah :');
+  cetakDaftarNama(daftarFilem, 'daftar filem');
+}
+
+void functionOPtionalParameter () {
+  sayHello('jufron', 'tamo ama');
+  sayHello('jufron');
+}
+
+void functionNameParameter () {
+  sayHello1(lastName: 'tamo ama', firstName: 'jufron');
+  sayHello1(firstName: 'jufron');
+}
+
+void functionRecursiveParent () {
+  recursiveFuntion(5);
+}
+
+void innerFunction () {
+  void sayHello () {
+    print('hallo nama saya jefron');
+  }
+
+  sayHello();
+}
+
+void higherOrderFunction () {
+
+  sayHello2('sinta', (String nama) {
+    if (nama == 'gula') {
+      return 'nama tidak boleh gula';
+    } else {
+      return nama;
+    }
+  });
+}
+
+void sayHello2 (String nama, String Function(String nama) filter) {
+  var filterName = filter(nama);
+  print(filterName);
+}
+
+void functionShortExpression () {
+  // function short expression
+  int penjumlahana (int first, int second) => first + second;
+  int pengurangan (int first, int second) => first - second;
+  int perkalian (int first, int second) => first * second;
+
+  int tambah = penjumlahana(10, 20);
+  int kurang = pengurangan(50, 10);
+  int kali = perkalian(10, 20);
+
+  print(tambah);
+  print(kurang);
+  print(kali);
+}
+
+void sayHello (String firstName, [String? lastName]) {
+  print('hello nama saya ${firstName.toUpperCase()} ${lastName?.toUpperCase()}');
+}
+
+int recursiveFuntion (int numberRepeat) {
+  if (numberRepeat >= 1) {
+    print('perulangan recursive $numberRepeat');
+    return recursiveFuntion(numberRepeat - 1);
+  }
+
+  return 0;
+}
+
+void cetakDaftarNama (List <String> data, String information) {
+  data.forEach((String result) {
+    print('$information $result');
+  });
+}
+
+void sayHello1 ({required String firstName, String lastName = ''}) {
+  print('hallo nama saya ${firstName.toUpperCase()} ${lastName.toUpperCase()}');
 }
