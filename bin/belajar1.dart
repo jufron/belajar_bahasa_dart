@@ -5,8 +5,8 @@ void main() {
   // helloWorld();
   // variable();
   // tipeDataNumber();
-  tipeDataString();
-  // tipeDataDynamic();
+  // tipeDataString();
+  tipeDataDynamic();
 }
 
 helloWorld () {

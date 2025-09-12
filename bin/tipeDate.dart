@@ -51,6 +51,11 @@ void tipeDataDynamic () {
   print(value);
   value = 'jufron';
   print(value);
+
+  dynamic data1 = 1;
+  data1 = 2;
+  data1 = 'data1';
+
 }
 
 void tipeDataLate () {
@@ -58,3 +63,6 @@ void tipeDataLate () {
   // print(nama);
 }
 
+void tipeDataFinal () {
+  final String nama = 'jufron';
+}
