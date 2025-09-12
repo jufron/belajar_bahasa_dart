@@ -1,6 +1,12 @@
+import 'variabel.dart';
+import 'tipeDate.dart';
 
 void main() {
-  helloWorld();
+  // helloWorld();
+  // variable();
+  // tipeDataNumber();
+  tipeDataString();
+  // tipeDataDynamic();
 }
 
 helloWorld () {
