@@ -27,3 +27,15 @@ void memanipulasiSet () {
   print(daftarNama3);
   print('aksess value james = $james');
 }
+
+void setMultiDimensi () {
+    Set <dynamic> dataUnikCampuran = {
+      { 1, 2, 3, 4},
+      ['satu', 'dua', 'tiga'],
+      'Hello',    // String
+      123,        // int
+      true,       // bool
+      3.14,       // double
+      'lohha'     // String 'Hello' ini akan diabaikan karena sudah ada
+  };
+}

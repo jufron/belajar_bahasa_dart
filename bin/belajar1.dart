@@ -5,7 +5,7 @@ import 'operatorAritmatika.dart';
 import 'operatorTypeTest.dart';
 import 'tipeDataList.dart';
 import 'tipeDataSet.dart';
-
+import 'tipeDataMap.dart';
 
 void main() {
   // helloWorld();
@@ -21,7 +21,10 @@ void main() {
   // operatorIsAndIsNot();
   // tipeDataList1();
   // tipedataSet1();
-  memanipulasiSet();
+  // memanipulasiSet();
+  // tipeDataMap1();
+  // manipulasiTipeDataMap();
+  mapMultiDimensi();
 }
 
 helloWorld () {
