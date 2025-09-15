@@ -6,6 +6,7 @@ import 'operatorTypeTest.dart';
 import 'tipeDataList.dart';
 import 'tipeDataSet.dart';
 import 'tipeDataMap.dart';
+import 'perulangan.dart';
 
 void main() {
   // helloWorld();
@@ -24,7 +25,10 @@ void main() {
   // memanipulasiSet();
   // tipeDataMap1();
   // manipulasiTipeDataMap();
-  mapMultiDimensi();
+  // mapMultiDimensi();
+  // loopMapForeach1();
+  // loopMapForIn1();
+  loopSet1();
 }
 
 helloWorld () {
