@@ -7,6 +7,11 @@ import 'tipeDataList.dart';
 import 'tipeDataSet.dart';
 import 'tipeDataMap.dart';
 import 'perulangan.dart';
+import 'functionOptionalParameter.dart';
+import 'functionNamedParameter.dart';
+import 'functionShortExpression.dart';
+import 'hightOrderFunction.dart';
+import 'anonymousFunction.dart';
 
 void main() {
   // helloWorld();
@@ -28,7 +33,12 @@ void main() {
   // mapMultiDimensi();
   // loopMapForeach1();
   // loopMapForIn1();
-  loopSet1();
+  // loopSet1();
+  // functOptionalParameter();
+  // functNamedParameter();
+  // functionShortExpression1();
+  // hightOrderFunction1();
+  anonimouFunction1();
 }
 
 helloWorld () {
