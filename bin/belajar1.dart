@@ -12,6 +12,9 @@ import 'functionNamedParameter.dart';
 import 'functionShortExpression.dart';
 import 'hightOrderFunction.dart';
 import 'anonymousFunction.dart';
+import 'functionClosure.dart';
+import 'recursiveFunction.dart';
+
 
 void main() {
   // helloWorld();
@@ -38,7 +41,9 @@ void main() {
   // functNamedParameter();
   // functionShortExpression1();
   // hightOrderFunction1();
-  anonimouFunction1();
+  // anonimouFunction1();
+  // closureFunction1();
+  recursiveFunction();
 }
 
 helloWorld () {
