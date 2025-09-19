@@ -5,6 +5,11 @@ import 'constructor.dart';
 import 'namedConstructor.dart';
 import 'inizialiserList.dart';
 import 'constantConstructor.dart';
+import 'factoryConstructor.dart';
+import 'cascadeNotation.dart';
+import 'pewarisan.dart';
+import 'methodOveriding.dart';
+import 'polymorfisme.dart';
 
 void main() {
   // Person person1 = Person();
@@ -27,5 +32,10 @@ void main() {
   // constructor1();
   // namedConstructor1();
   // InisializerList1();
-  constantConstructor1();
+  // constantConstructor1();
+  // factoryConstructor1();
+  // cascadeNotation1();
+  // pewarisan1();
+  // methodOveriding1();
+  polymorfisme1();
 }
