@@ -10,6 +10,9 @@ import 'cascadeNotation.dart';
 import 'pewarisan.dart';
 import 'methodOveriding.dart';
 import 'polymorfisme.dart';
+import 'typeCheckAndCast.dart';
+import 'abstractClass.dart';
+import 'abstractMethod.dart';
 
 void main() {
   // Person person1 = Person();
@@ -37,5 +40,8 @@ void main() {
   // cascadeNotation1();
   // pewarisan1();
   // methodOveriding1();
-  polymorfisme1();
+  // polymorfisme1();
+  // typeCheckAndCast1();
+  // abstractClass1();
+  abstractMethod1();
 }
