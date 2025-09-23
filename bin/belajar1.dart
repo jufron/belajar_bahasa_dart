@@ -16,6 +16,7 @@ import 'abstractMethod.dart';
 import 'accessModifier.dart';
 import 'geterAndSetter.dart';
 import 'interface.dart';
+import 'mixin.dart';
 
 
 void main() {
@@ -52,6 +53,7 @@ void main() {
   // accessModifier2();
   // geterAndSetter1();
   interface1();
+  mixin1();
 }
 
 void accessModifier2 () {
