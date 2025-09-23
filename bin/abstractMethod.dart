@@ -17,3 +17,9 @@ class Dog extends Animal {
     print('dog is run');
   }
 }
+
+class Cat extends Animal {
+  void run () {
+    print('cat is run');
+  }
+}

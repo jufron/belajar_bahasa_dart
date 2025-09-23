@@ -13,6 +13,10 @@ import 'polymorfisme.dart';
 import 'typeCheckAndCast.dart';
 import 'abstractClass.dart';
 import 'abstractMethod.dart';
+import 'accessModifier.dart';
+import 'geterAndSetter.dart';
+import 'interface.dart';
+
 
 void main() {
   // Person person1 = Person();
@@ -43,5 +47,20 @@ void main() {
   // polymorfisme1();
   // typeCheckAndCast1();
   // abstractClass1();
-  abstractMethod1();
+  // abstractMethod1();
+  // accessModifier();
+  // accessModifier2();
+  // geterAndSetter1();
+  interface1();
+}
+
+void accessModifier2 () {
+  Product product1 = Product();
+  product1.id = '123';
+  product1.name = 'iphone';
+  product1.setQuantity(100);
+
+  print(product1.id);
+  print(product1.name);
+  print(product1.getQuantity());
 }
