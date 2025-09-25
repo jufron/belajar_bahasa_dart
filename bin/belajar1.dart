@@ -20,7 +20,9 @@ import 'mixin.dart';
 import 'toStringMethod.dart';
 import 'equalsOperator.dart';
 import 'overideHascode.dart';
-
+import 'noSuctMethod.dart';
+import 'callableClass.dart';
+import 'typedef.dart';
 
 void main() {
   // Person person1 = Person();
@@ -59,7 +61,11 @@ void main() {
   // mixin1();
   // toStringMethod1();
   // equalsOperator1();
-  overideHascode1();
+  // overideHascode1();
+  // noSuctMethod1();
+  // callableClass1();
+  typedef1();
+  typedefFUnction1();
 }
 
 void accessModifier2 () {
@@ -67,8 +73,10 @@ void accessModifier2 () {
   product1.id = '123';
   product1.name = 'iphone';
   product1.setQuantity(100);
-
+  
   print(product1.id);
   print(product1.name);
   print(product1.getQuantity());
+
+
 }
