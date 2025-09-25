@@ -17,6 +17,9 @@ import 'accessModifier.dart';
 import 'geterAndSetter.dart';
 import 'interface.dart';
 import 'mixin.dart';
+import 'toStringMethod.dart';
+import 'equalsOperator.dart';
+import 'overideHascode.dart';
 
 
 void main() {
@@ -52,8 +55,11 @@ void main() {
   // accessModifier();
   // accessModifier2();
   // geterAndSetter1();
-  interface1();
-  mixin1();
+  // interface1();
+  // mixin1();
+  // toStringMethod1();
+  // equalsOperator1();
+  overideHascode1();
 }
 
 void accessModifier2 () {
