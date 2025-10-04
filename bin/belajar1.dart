@@ -23,6 +23,9 @@ import 'overideHascode.dart';
 import 'noSuctMethod.dart';
 import 'callableClass.dart';
 import 'typedef.dart';
+import 'static.dart';
+import 'enum.dart';
+import 'exception.dart';
 
 void main() {
   // Person person1 = Person();
@@ -64,8 +67,11 @@ void main() {
   // overideHascode1();
   // noSuctMethod1();
   // callableClass1();
-  typedef1();
-  typedefFUnction1();
+  // typedef1();
+  // typedefFUnction1();
+  // belajarStatic1();
+  // tipeDataEnum1();
+  belajarException();
 }
 
 void accessModifier2 () {
